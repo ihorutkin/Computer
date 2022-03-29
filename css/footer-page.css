@@ -1,0 +1,10 @@
+.footer-page{
+    background: linear-gradient(#332f2f, #4f4a4a);
+    padding: 25px 0;
+}
+.footer-page-text{
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    text-align: center;
+}

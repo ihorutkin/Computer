@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header-page.css">
+    <link rel="stylesheet" href="css/sectiontop.css">
+    <link rel="stylesheet" href="css/section-about.css">
+    <link rel="stylesheet" href="css/section-contacts.css">
+    <link rel="stylesheet" href="css/footer-page.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-page">
+        <div class="container header-page-container">
+            <div class="header-page-start">
+                <div class="logo">
+                    <img class="logo-img" src="img/Sectiontop/unity-technologies-logo.svg" alt="" width="120px" height="48px"> 
+                </div>
+            </div>
+            <div class="header-page-end">
+                <nav class="header-page-nav">
+                    <ul class="header-page-ul">
+                        <li class="header-page-li">
+                            <a class="header-page-link" href="#" data-scroll-to="section-catalog">
+                                <span class="header-page-text">Ассортимент</span>
+                            </a>
+                        </li>
+                        <li class="header-page-li">
+                            <a class="header-page-link" href="#" data-scroll-to="section-about">
+                                <span class="header-page-text">О нас</span>
+                            </a>
+                        </li>
+                        <li class="header-page-li">
+                            <a class="header-page-link" href="#" data-scroll-to="section-contacts">
+                                <span class="header-page-text">Контакты</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="phone">
+                    <a class="phone-item header-page-phone" href="tel:+380666572974">+38 (066) 657-29-74</a>
+                </div>
+                <div class="header-page-menu">
+                    <button class="btn-menu" type="button" data-popup="popup-menu">
+                        <span class="btn-menu-box">
+                            <span class="btn-menu-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-top">
+        <div class="container section-top-container">
+            <p class="section-top-info">от передовых поставщиков</p>
+            <h1 class="section-top-title">Лучшая компьютерная техника в Украине</h1>
+            <div class="section-top-button">
+            <button class="btn" type="button" data-scroll-to="section-catalog">Выбрать</button>
+            </div>
+        </div>
+    </section>
+    <section class="section section-catalog">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="page-title">Ассортимент</h2>
+                <nav class="catalog-nav">
+                    <ul class="catalog-nav-wrapper">
+                        <li class="catalog-nav-item">
+                            <button class="catalog-nav-button is-active" type="button" data-filter="all">Все</button>
+                        </li>
+                        <li class="catalog-nav-item">
+                            <button class="catalog-nav-button" type="button" data-filter="Smartphone">Сматрфоны</button>
+                        </li>
+                        <li class="catalog-nav-item">
+                            <button class="catalog-nav-button" type="button" data-filter="PC">ПК</button>
+                        </li>
+                        <li class="catalog-nav-item">
+                            <button class="catalog-nav-button" type="button" data-filter="Pads">Планшеты</button>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="catalog">
+                <div class="catalog-item" data-category="Smartphone">
+                    <div class="product catalog-product">
+                        <img src="img/Sectiontop/P11.jpg" alt="" class="Product-img">
+                        <div class="Product-content">
+                            <h3 class="Product-title">Samsung S20</h3>
+                            <p class="Product-description">Зум со сверхразрешением включает в себя цифровой зум, который может вызвать искажение изображения.</p>
+                        </div>
+                        <footer class="Product-footer">
+                            <div class="Product-models">
+                                <button class="Product-model is-active" type="button">Galaxy S20 FE</button>
+                                <button class="Product-model" type="button">Galaxy S20</button>
+                                <button class="Product-model" type="button">Galaxy S20+</button>
+                                <button class="Product-model" type="button">Galaxy S20 Ultra</button>
+                            </div>
+                            <div class="Products-bottom">
+                                <div class="Products-price">
+                                    <span class="Products-price-value">15000</span>
+                                    <span class="Product-currency">&#8372;</span>
+                                </div>
+                                <button type="button" class="btn Product-button" data-popup="popup-order">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="Smartphone">
+                    <div class="product catalog-product">
+                        <img src="img/Sectiontop/P12.jpg" alt="" class="Product-img">
+                        <div class="Product-content">
+                            <h3 class="Product-title">Huawei p40 lite</h3>
+                            <p class="Product-description">Під корпусом HUAWEI P40 lite удосталь сил, щоб потягнути навіть найпотужніші ігри.</p>
+                        </div>
+                        <footer class="Product-footer">
+                            <div class="Product-models">
+                                <button class="Product-model is-active" type="button">Huawei p40 lite</button>
+                                <button class="Product-model" type="button">Huawei p40 lite e</button>
+                                <button class="Product-model" type="button">Huawei p40 pro</button>
+                                <button class="Product-model" type="button">Huawei p40 plus</button>
+                            </div>
+                            <div class="Products-bottom">
+                                <div class="Products-price">
+                                    <span class="Products-price-value">7000</span>
+                                    <span class="Product-currency">&#8372;</span>
+                                </div>
+                                <button type="button" class="btn Product-button" data-popup="popup-order">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="Smartphone">
+                    <div class="product catalog-product">
+                        <img src="img/Sectiontop/P13.jpg" alt="" class="Product-img">
+                        <div class="Product-content">
+                            <h3 class="Product-title">Samsung Galaxy A71</h3>
+                            <p class="Product-description">Безмежний 6.7-дюймовий sAMOLED Plus екран Galaxy A71 забезпечує природне передавання кольорів зображення будь-якої миті.</p>
+                        </div>
+                        <footer class="Product-footer">
+                            <div class="Product-models">
+                                <button class="Product-model is-active" type="button">Galaxy A71</button>
+                                <button class="Product-model" type="button">Galaxy A70</button>
+                                <button class="Product-model" type="button">Galaxy A51</button>
+                                <button class="Product-model" type="button">Galaxy A80</button>
+                            </div>
+                            <div class="Products-bottom">
+                                <div class="Products-price">
+                                    <span class="Products-price-value">9500</span>
+                                    <span class="Product-currency">&#8372;</span>
+                                </div>
+                                <button type="button" class="btn Product-button" data-popup="popup-order">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="PC">
+                    <div class="product catalog-product">
+                        <img src="img/Sectiontop/P14.jpg" alt="" class="Product-img">
+                        <div class="Product-content">
+                            <h3 class="Product-title">HP Omen X 2S 15-dg0002ur (7BV20EA) Shadow Black</h3>
+                            <p class="Product-description">Цей витончений, потужний, обладнаний двома екранами ноутбук забезпечує подвійну перевагу та відкриває майбутнє портативних ігор.</p>
+                        </div>
+                        <footer class="Product-footer">
+                            <div class="Product-models">
+                                <button class="Product-model is-active" type="button">HP Omen X 2S</button>
+                                <button class="Product-model" type="button">HP Omen X 15</button>
+                                <button class="Product-model" type="button">HP Omen X 17</button>
+                                <button class="Product-model" type="button">GHP Omen X 17-ap000</button>
+                            </div>
+                            <div class="Products-bottom">
+                                <div class="Products-price">
+                                    <span class="Products-price-value">100000</span>
+                                    <span class="Product-currency">&#8372;</span>
+                                </div>
+                                <button type="button" class="btn Product-button" data-popup="popup-order">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="Smartphone">
+                    <div class="product catalog-product">
+                        <img src="img/Sectiontop/P15.jpg" alt="" class="Product-img">
+                        <div class="Product-content">
+                            <h3 class="Product-title">OPPO A73 4/128 GB Navy Blue</h3>
+                            <p class="Product-description">OPPO A73 надихає вас фотографувати більше, ніж будь-коли раніше.</p>
+                        </div>
+                        <footer class="Product-footer">
+                            <div class="Product-models">
+                                <button class="Product-model is-active" type="button">OPPO A73</button>
+                                <button class="Product-model" type="button">OPPO A53</button>
+                                <button class="Product-model" type="button">OPPO A91</button>
+                                <button class="Product-model" type="button">OPPO A52</button>
+                            </div>
+                            <div class="Products-bottom">
+                                <div class="Products-price">
+                                    <span class="Products-price-value">7000</span>
+                                    <span class="Product-currency">&#8372;</span>
+                                </div>
+                                <button type="button" class="btn Product-button" data-popup="popup-order">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="Pads">
+                    <div class="product catalog-product">
+                        <img src="img/Sectiontop/P16.jpg" alt="" class="Product-img">
+                        <div class="Product-content">
+                            <h3 class="Product-title">Lenovo Tab M10 Plus</h3>
+                            <p class="Product-description">Планшет з 10.3-дюймовим дисплеєм із роздільною здатністю FHD (1920x1200) чудово підходить для перегляду улюблених шоу та відео із сервісів Netflix і YouTube.</p>
+                        </div>
+                        <footer class="Product-footer">
+                            <div class="Product-models">
+                                <button class="Product-model is-active" type="button">Tab M10 Plus</button>
+                                <button class="Product-model" type="button">Tab M10 FHD Plus</button>
+                                <button class="Product-model" type="button">Tab M10 HD</button>
+                                <button class="Product-model" type="button">Tab M10 FHD</button>
+                            </div>
+                            <div class="Products-bottom">
+                                <div class="Products-price">
+                                    <span class="Products-price-value">7000</span>
+                                    <span class="Product-currency">&#8372;</span>
+                                </div>
+                                <button type="button" class="btn Product-button" data-popup="popup-order">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="PC">
+                    <div class="product catalog-product">
+                        <img src="img/Sectiontop/P17.jpg" alt="" class="Product-img">
+                        <div class="Product-content">
+                            <h3 class="Product-title">Asus Laptop E410MA-EB268</h3>
+                            <p class="Product-description">ASUS Laptop E410 являє собою досить гармонійне рішення зі збалансованою конфігурацією.</p>
+                        </div>
+                        <footer class="Product-footer">
+                            <div class="Product-models">
+                                <button class="Product-model is-active" type="button">Laptop E410MA-EB268</button>
+                                <button class="Product-model" type="button">Laptop 15</button>
+                                <button class="Product-model" type="button">Laptop x515jp</button>
+                                <button class="Product-model" type="button">Laptop x509fj</button>
+                            </div>
+                            <div class="Products-bottom">
+                                <div class="Products-price">
+                                    <span class="Products-price-value">10000</span>
+                                    <span class="Product-currency">&#8372;</span>
+                                </div>
+                                <button type="button" class="btn Product-button" data-popup="popup-order">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="PC">
+                    <div class="product catalog-product">
+                        <img src="img/Sectiontop/P18.jpg" alt="" class="Product-img">
+                        <div class="Product-content">
+                            <h3 class="Product-title">Asus ZenBook 14 UX435EG-A5009T</h3>
+                            <p class="Product-description">Ноутбук ZenBook 14 пропонує всім справжню мобільність у поєднанні з чудовою продуктивністю та класичним дизайном.</p>
+                        </div>
+                        <footer class="Product-footer">
+                            <div class="Product-models">
+                                <button class="Product-model is-active" type="button">UX435 EG</button>
+                                <button class="Product-model" type="button">UX433</button>
+                                <button class="Product-model" type="button">UX434 fl</button>
+                                <button class="Product-model" type="button">UX425 ja</button>
+                            </div>
+                            <div class="Products-bottom">
+                                <div class="Products-price">
+                                    <span class="Products-price-value">50000</span>
+                                    <span class="Product-currency">&#8372;</span>
+                                </div>
+                                <button type="button" class="btn Product-button" data-popup="popup-order">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="Pads">
+                    <div class="product catalog-product">
+                        <img src="img/Sectiontop/P19.jpg" alt="" class="Product-img">
+                        <div class="Product-content">
+                            <h3 class="Product-title">Apple iPad Pro 12.9</h3>
+                            <p class="Product-description">Дисплей Liquid Retina від краю до краю — це не просто потужне зображення, а ще й неймовірно прогресивні технології.</p>
+                        </div>
+                        <footer class="Product-footer">
+                            <div class="Product-models">
+                                <button class="Product-model is-active" type="button">iPad Pro 12.9</button>
+                                <button class="Product-model" type="button">iPad Pro 11</button>
+                                <button class="Product-model" type="button">iPad Pro 10.5</button>
+                                <button class="Product-model" type="button">iPad Pro 9.7</button>
+                            </div>
+                            <div class="Products-bottom">
+                                <div class="Products-price">
+                                    <span class="Products-price-value">42000</span>
+                                    <span class="Product-currency">&#8372;</span>
+                                </div>
+                                <button type="button" class="btn Product-button" data-popup="popup-order">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <div class="catalog-item" data-category="Pads">
+                    <div class="product catalog-product">
+                        <img src="img/Sectiontop/P20.jpg" alt="" class="Product-img">
+                        <div class="Product-content">
+                            <h3 class="Product-title">Samsung Galaxy Tab S6 Lite</h3>
+                            <p class="Product-description">Galaxy Tab S6 Lite — ваш суперпортативний і ефективний супутник для нотаток.</p>
+                        </div>
+                        <footer class="Product-footer">
+                            <div class="Product-models">
+                                <button class="Product-model is-active" type="button">Galaxy Tab S6</button>
+                                <button class="Product-model" type="button">Galaxy Tab S7</button>
+                                <button class="Product-model" type="button">Galaxy Tab A7</button>
+                                <button class="Product-model" type="button">Galaxy Tab S5E</button>
+                            </div>
+                            <div class="Products-bottom">
+                                <div class="Products-price">
+                                    <span class="Products-price-value">10500</span>
+                                    <span class="Product-currency">&#8372;</span>
+                                </div>
+                                <button type="button" class="btn Product-button" data-popup="popup-order">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-about">
+        <img src="img/Sectiontop/img21.jpg" alt="" class="section-about-img">
+        <div class="container section-about-container">
+            <div class="section-about-content">
+                <h2 class="page-title section-about-title">О нас</h2>
+                <p class="section-about-text">Наш компьютерный интернет магазин предлагает лучший выбор компьютеров недорого, с доставкой. Вы можете приобрести новый персональный настольный, купить стационарный, крутой, производительный компьютер.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section section-contacts">
+        <div class="container section-contacts-container">
+            <header class="section-header">
+                <h2 class="page-title section-contacts-title">Контакты</h2>
+            </header>
+            <div class="contacts">
+                <div class="contacts-start">
+                    <div class="contacts-map" id="map"></div>
+                </div>
+                <div class="contacts-end">
+                    <div class="contacts-item">
+                        <h3 class="contacts-title">Адрес</h3>
+                        <p class="contacts-text">г. Киев ул. Крещатик 38</p>
+                        <h3 class="contacts-title">Телефон</h3>
+                        <p class="contacts-text">
+                            <a href="tel:+380666572974" class="contacts-phone">+38 (066) 657-29-74</a>
+                        </p>
+                    </div>
+                    <div class="contacts-item">
+                        <h3 class="contacts-title">Социальные сети</h3>
+                        <ul class="socials">
+                            <li class="socials-item">
+                                <a href="#" class="socials-link" target="_blank">
+                                    <?xml version="1.0" ?>
+    <svg class="socials-icon socials-icon-instagram" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40">
+        <defs>
+            <style>
+                .socials-logo1{
+                    fill:url(#radial-gradient);
+                    }
+                .socials-logoi{
+                    fill:#fff;
+                    }
+            </style>
+            <radialGradient cx="-578.95" cy="-837.6" gradientTransform="translate(499.5 629.5) scale(0.75)" gradientUnits="userSpaceOnUse" id="radial-gradient" r="197.06">
+                <stop offset="0" stop-color="#f9ed32"/>
+                <stop offset="0.36" stop-color="#ee2a7b"/>
+                <stop offset="0.44" stop-color="#d22a8a"/>
+                <stop offset="0.6" stop-color="#8b2ab2"/>
+                <stop offset="0.83" stop-color="#1b2af0"/>
+                <stop offset="0.88" stop-color="#002aff"/>
+            </radialGradient>
+        </defs>
+            <title/>
+        <g data-name="3-instagram" id="_3-instagram">
+            <rect class="socials-logo1" height="64" rx="11.2" ry="11.2" transform="translate(64 64) rotate(180)" width="64"/>
+            <path class="socials-logoi" d="M44,56H20A12,12,0,0,1,8,44V20A12,12,0,0,1,20,8H44A12,12,0,0,1,56,20V44A12,12,0,0,1,44,56ZM20,12.8A7.21,7.21,0,0,0,12.8,20V44A7.21,7.21,0,0,0,20,51.2H44A7.21,7.21,0,0,0,51.2,44V20A7.21,7.21,0,0,0,44,12.8Z"/>
+            <path class="socials-logoi" d="M32,45.6A13.6,13.6,0,1,1,45.6,32,13.61,13.61,0,0,1,32,45.6Zm0-22.4A8.8,8.8,0,1,0,40.8,32,8.81,8.81,0,0,0,32,23.2Z"/>
+            <circle class="socials-logoi" cx="45.6" cy="19.2" r="2.4"/>
+        </g>
+    </svg>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a href="#" class="socials-link" target="_blank">
+                                    <?xml version="1.0" ?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg class="socials-icon socials-icon-facebook" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" viewBox="0 0 258 258" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40">
+   <defs>
+      <style>
+            .fil2 {
+               fill:#30487C
+               }
+            .fil0 {
+               fill:#3B5999
+               }
+            .fil1 {
+               fill:white
+               }
+      </style>
+   </defs>
+      <g id="Layer_x0020_1">
+         <g id="_444233528">
+            <rect class="fil0" height="258" rx="28" ry="28" width="258"/>
+            <path class="fil1" d="M84 106l27 0 0 -5c0,-8 -1,-18 0,-26 1,-19 11,-31 37,-32l26 1 0 28c-11,0 -30,-4 -32,10l0 24 30 0 -3 31 -27 0 0 78 -31 0 0 -78 -27 -1 0 -30z"/>
+            <path class="fil2" d="M258 128l-84 -84 0 28c-11,0 -30,-4 -32,10l0 24 30 0 -3 31 -27 0 0 78 -31 0 43 43 76 0 28 -28 0 -102z"/>
+         </g>
+      </g>
+</svg>
+                                </a>
+                            </li>
+                                    <li class="socials-item">
+                                        <a href="#" class="socials-link" target="_blank">
+                                            <?xml version="1.0" ?>
+<svg class="socials-icon socials-icon-twitter" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40">
+<g id="_x37__stroke">
+<g id="Twitter">
+<rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128"/>
+<path class="socials-logo" d="M128,23.294    c-4.703,2.142-9.767,3.59-15.079,4.237c5.424-3.328,9.587-8.606,11.548-14.892c-5.079,3.082-10.691,5.324-16.687,6.526    c-4.778-5.231-11.608-8.498-19.166-8.498c-14.493,0-26.251,12.057-26.251,26.927c0,2.111,0.225,4.16,0.676,6.133    C41.217,42.601,21.871,31.892,8.91,15.582c-2.261,3.991-3.554,8.621-3.554,13.552c0,9.338,4.636,17.581,11.683,22.412    c-4.297-0.131-8.355-1.356-11.901-3.359v0.331c0,13.051,9.053,23.937,21.074,26.403c-2.201,0.632-4.523,0.948-6.92,0.948    c-1.69,0-3.343-0.162-4.944-0.478c3.343,10.694,13.035,18.483,24.53,18.691c-8.986,7.227-20.315,11.533-32.614,11.533    c-2.119,0-4.215-0.123-6.266-0.37c11.623,7.627,25.432,12.088,40.255,12.088c48.309,0,74.717-41.026,74.717-76.612    c0-1.171-0.023-2.342-0.068-3.49C120.036,33.433,124.491,28.695,128,23.294" fill="#00AAEC" fill-rule="evenodd" id="Twitter_1_"/>
+</g>
+</g>
+</svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials-item">
+                                        <a href="#" class="socials-link" target="_blank">
+                                            <?xml version="1.0" ?>
+<svg class="socials-icon socials-icon-viber" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40">
+<g id="_x34__stroke">
+<g id="Viber_1_">
+<rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128"/>
+<path class="socials-logo" d="M71.4,44.764c2.492,0.531,4.402,1.478,6.034,3.006    c2.1,1.983,3.251,4.383,3.757,7.831c0.342,2.248,0.202,3.132-0.595,3.865c-0.746,0.682-2.125,0.707-2.96,0.063    c-0.607-0.455-0.797-0.935-0.936-2.236c-0.164-1.731-0.468-2.943-0.987-4.067c-1.113-2.387-3.074-3.625-6.388-4.029    c-1.556-0.19-2.024-0.366-2.53-0.96c-0.924-1.099-0.569-2.88,0.708-3.537c0.481-0.24,0.683-0.265,1.746-0.202    C69.908,44.536,70.882,44.65,71.4,44.764z M68.706,35.227c7.679,1.124,13.624,4.686,17.521,10.471    c2.189,3.259,3.555,7.086,4.023,11.191c0.164,1.503,0.164,4.244-0.013,4.699c-0.165,0.429-0.696,1.01-1.151,1.25    c-0.493,0.253-1.543,0.227-2.125-0.076c-0.974-0.493-1.265-1.276-1.265-3.398c0-3.271-0.848-6.72-2.315-9.398    c-1.67-3.057-4.099-5.583-7.059-7.339c-2.543-1.516-6.3-2.64-9.728-2.918c-1.24-0.101-1.923-0.354-2.391-0.897    c-0.721-0.821-0.797-1.933-0.19-2.855C64.67,34.937,65.682,34.772,68.706,35.227z M38.914,27.434    c0.443,0.152,1.126,0.505,1.518,0.758c2.403,1.592,9.095,10.143,11.284,14.412c1.252,2.438,1.67,4.244,1.278,5.583    c-0.405,1.44-1.075,2.198-4.074,4.61c-1.202,0.972-2.328,1.97-2.505,2.236c-0.455,0.657-0.822,1.945-0.822,2.855    c0.013,2.109,1.379,5.937,3.175,8.88c1.391,2.286,3.883,5.216,6.35,7.465c2.897,2.653,5.452,4.459,8.337,5.886    c3.707,1.844,5.971,2.311,7.628,1.541c0.417-0.19,0.86-0.442,0.999-0.556c0.126-0.114,1.101-1.301,2.163-2.615    c2.049-2.577,2.517-2.994,3.922-3.474c1.784-0.606,3.605-0.442,5.44,0.493c1.392,0.72,4.428,2.602,6.388,3.966    c2.581,1.806,8.096,6.303,8.843,7.2c1.315,1.617,1.543,3.688,0.658,5.975c-0.936,2.412-4.579,6.934-7.122,8.867    c-2.302,1.743-3.934,2.412-6.085,2.513c-1.771,0.088-2.505-0.063-4.769-0.998C63.76,95.718,49.579,84.805,38.32,69.811    c-5.882-7.831-10.361-15.953-13.422-24.378c-1.784-4.913-1.872-7.048-0.405-9.562c0.633-1.061,3.327-3.688,5.288-5.153    c3.264-2.425,4.769-3.322,5.971-3.575C36.574,26.966,38.004,27.105,38.914,27.434z M67.833,26.07    c4.352,0.543,7.868,1.591,11.727,3.474c3.795,1.857,6.224,3.613,9.437,6.808c3.011,3.019,4.681,5.305,6.452,8.854    c2.467,4.951,3.871,10.838,4.111,17.317c0.089,2.21,0.025,2.703-0.481,3.335c-0.961,1.225-3.074,1.023-3.795-0.354    c-0.228-0.455-0.291-0.846-0.367-2.615c-0.127-2.716-0.316-4.471-0.696-6.568c-1.493-8.223-5.44-14.791-11.74-19.503    c-5.25-3.941-10.677-5.861-17.786-6.278c-2.404-0.139-2.821-0.227-3.365-0.644c-1.012-0.796-1.063-2.665-0.089-3.537    c0.595-0.543,1.012-0.619,3.074-0.556C65.392,25.842,66.973,25.969,67.833,26.07z M64,0c35.346,0,64,28.654,64,64    s-28.654,64-64,64S0,99.346,0,64S28.654,0,64,0z" fill="#7F4DA0" fill-rule="evenodd" id="Viber"/>
+</g>
+</g>
+</svg>
+                                        </a>
+                                    </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-page">
+        <div class="container">
+            <div class="footer-page-text">Unity</div>
+        </div>
+    </footer>
+    <div class="popup popup-menu">
+        <div class="popup-wrapper">
+            <div class="popup-inner">
+                <div class="popup-content popup-content--fluid popup-content--center">
+                    <button class="btn-close popup-btn-close popup-close"></button>
+                    <nav class="mobile-menu popup-mobile-menu">
+                        <ul class="mobile-menu-ul">
+                            <li class="mobile-menu-li">
+                                <a class="mobile-menu-link popup-close" href="#" data-scroll-to="section-catalog">Ассортимент</a>
+                            </li>
+                            <li class="mobile-menu-li">
+                                <a class="mobile-menu-link popup-close" href="#" data-scroll-to="section-about">О нас</a>
+                            </li>
+                            <li class="mobile-menu-li">
+                                <a class="mobile-menu-link popup-close" href="#" data-scroll-to="section-contacts">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="phone popup-phone">
+                        <a class="popup-item popup-menu-phone" href="tel:+380666572974">+38 (066) 657-29-74</a>
+                    </div>
+                    <ul class="socials">
+                        <li class="socials-item">
+                            <a href="#" class="socials-link" target="_blank">
+                                <?xml version="1.0" ?>
+<svg class="socials-icon socials-icon-instagram" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40">
+    <defs>
+        <style>
+            .socials-logo1{
+                fill:url(#radial-gradient);
+                }
+            .socials-logoi{
+                fill:#fff;
+                }
+        </style>
+        <radialGradient cx="-578.95" cy="-837.6" gradientTransform="translate(499.5 629.5) scale(0.75)" gradientUnits="userSpaceOnUse" id="radial-gradient" r="197.06">
+            <stop offset="0" stop-color="#f9ed32"/>
+            <stop offset="0.36" stop-color="#ee2a7b"/>
+            <stop offset="0.44" stop-color="#d22a8a"/>
+            <stop offset="0.6" stop-color="#8b2ab2"/>
+            <stop offset="0.83" stop-color="#1b2af0"/>
+            <stop offset="0.88" stop-color="#002aff"/>
+        </radialGradient>
+    </defs>
+        <title/>
+    <g data-name="3-instagram" id="_3-instagram">
+        <rect class="socials-logo1" height="64" rx="11.2" ry="11.2" transform="translate(64 64) rotate(180)" width="64"/>
+        <path class="socials-logoi" d="M44,56H20A12,12,0,0,1,8,44V20A12,12,0,0,1,20,8H44A12,12,0,0,1,56,20V44A12,12,0,0,1,44,56ZM20,12.8A7.21,7.21,0,0,0,12.8,20V44A7.21,7.21,0,0,0,20,51.2H44A7.21,7.21,0,0,0,51.2,44V20A7.21,7.21,0,0,0,44,12.8Z"/>
+        <path class="socials-logoi" d="M32,45.6A13.6,13.6,0,1,1,45.6,32,13.61,13.61,0,0,1,32,45.6Zm0-22.4A8.8,8.8,0,1,0,40.8,32,8.81,8.81,0,0,0,32,23.2Z"/>
+        <circle class="socials-logoi" cx="45.6" cy="19.2" r="2.4"/>
+    </g>
+</svg>
+                            </a>
+                        </li>
+                        <li class="socials-item">
+                            <a href="#" class="socials-link" target="_blank">
+                                <?xml version="1.0" ?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg class="socials-icon socials-icon-facebook" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" viewBox="0 0 258 258" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40">
+<defs>
+  <style>
+        .fil2 {
+           fill:#30487C
+           }
+        .fil0 {
+           fill:#3B5999
+           }
+        .fil1 {
+           fill:white
+           }
+  </style>
+</defs>
+  <g id="Layer_x0020_1">
+     <g id="_444233528">
+        <rect class="fil0" height="258" rx="28" ry="28" width="258"/>
+        <path class="fil1" d="M84 106l27 0 0 -5c0,-8 -1,-18 0,-26 1,-19 11,-31 37,-32l26 1 0 28c-11,0 -30,-4 -32,10l0 24 30 0 -3 31 -27 0 0 78 -31 0 0 -78 -27 -1 0 -30z"/>
+        <path class="fil2" d="M258 128l-84 -84 0 28c-11,0 -30,-4 -32,10l0 24 30 0 -3 31 -27 0 0 78 -31 0 43 43 76 0 28 -28 0 -102z"/>
+     </g>
+  </g>
+</svg>
+                            </a>
+                        </li>
+                                <li class="socials-item">
+                                    <a href="#" class="socials-link" target="_blank">
+                                        <?xml version="1.0" ?>
+<svg class="socials-icon socials-icon-twitter" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40">
+<g id="_x37__stroke">
+<g id="Twitter">
+<rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128"/>
+<path class="socials-logo" d="M128,23.294    c-4.703,2.142-9.767,3.59-15.079,4.237c5.424-3.328,9.587-8.606,11.548-14.892c-5.079,3.082-10.691,5.324-16.687,6.526    c-4.778-5.231-11.608-8.498-19.166-8.498c-14.493,0-26.251,12.057-26.251,26.927c0,2.111,0.225,4.16,0.676,6.133    C41.217,42.601,21.871,31.892,8.91,15.582c-2.261,3.991-3.554,8.621-3.554,13.552c0,9.338,4.636,17.581,11.683,22.412    c-4.297-0.131-8.355-1.356-11.901-3.359v0.331c0,13.051,9.053,23.937,21.074,26.403c-2.201,0.632-4.523,0.948-6.92,0.948    c-1.69,0-3.343-0.162-4.944-0.478c3.343,10.694,13.035,18.483,24.53,18.691c-8.986,7.227-20.315,11.533-32.614,11.533    c-2.119,0-4.215-0.123-6.266-0.37c11.623,7.627,25.432,12.088,40.255,12.088c48.309,0,74.717-41.026,74.717-76.612    c0-1.171-0.023-2.342-0.068-3.49C120.036,33.433,124.491,28.695,128,23.294" fill="#00AAEC" fill-rule="evenodd" id="Twitter_1_"/>
+</g>
+</g>
+</svg>
+                                    </a>
+                                </li>
+                                <li class="socials-item">
+                                    <a href="#" class="socials-link" target="_blank">
+                                        <?xml version="1.0" ?>
+<svg class="socials-icon socials-icon-viber" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40">
+<g id="_x34__stroke">
+<g id="Viber_1_">
+<rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128"/>
+<path class="socials-logo" d="M71.4,44.764c2.492,0.531,4.402,1.478,6.034,3.006    c2.1,1.983,3.251,4.383,3.757,7.831c0.342,2.248,0.202,3.132-0.595,3.865c-0.746,0.682-2.125,0.707-2.96,0.063    c-0.607-0.455-0.797-0.935-0.936-2.236c-0.164-1.731-0.468-2.943-0.987-4.067c-1.113-2.387-3.074-3.625-6.388-4.029    c-1.556-0.19-2.024-0.366-2.53-0.96c-0.924-1.099-0.569-2.88,0.708-3.537c0.481-0.24,0.683-0.265,1.746-0.202    C69.908,44.536,70.882,44.65,71.4,44.764z M68.706,35.227c7.679,1.124,13.624,4.686,17.521,10.471    c2.189,3.259,3.555,7.086,4.023,11.191c0.164,1.503,0.164,4.244-0.013,4.699c-0.165,0.429-0.696,1.01-1.151,1.25    c-0.493,0.253-1.543,0.227-2.125-0.076c-0.974-0.493-1.265-1.276-1.265-3.398c0-3.271-0.848-6.72-2.315-9.398    c-1.67-3.057-4.099-5.583-7.059-7.339c-2.543-1.516-6.3-2.64-9.728-2.918c-1.24-0.101-1.923-0.354-2.391-0.897    c-0.721-0.821-0.797-1.933-0.19-2.855C64.67,34.937,65.682,34.772,68.706,35.227z M38.914,27.434    c0.443,0.152,1.126,0.505,1.518,0.758c2.403,1.592,9.095,10.143,11.284,14.412c1.252,2.438,1.67,4.244,1.278,5.583    c-0.405,1.44-1.075,2.198-4.074,4.61c-1.202,0.972-2.328,1.97-2.505,2.236c-0.455,0.657-0.822,1.945-0.822,2.855    c0.013,2.109,1.379,5.937,3.175,8.88c1.391,2.286,3.883,5.216,6.35,7.465c2.897,2.653,5.452,4.459,8.337,5.886    c3.707,1.844,5.971,2.311,7.628,1.541c0.417-0.19,0.86-0.442,0.999-0.556c0.126-0.114,1.101-1.301,2.163-2.615    c2.049-2.577,2.517-2.994,3.922-3.474c1.784-0.606,3.605-0.442,5.44,0.493c1.392,0.72,4.428,2.602,6.388,3.966    c2.581,1.806,8.096,6.303,8.843,7.2c1.315,1.617,1.543,3.688,0.658,5.975c-0.936,2.412-4.579,6.934-7.122,8.867    c-2.302,1.743-3.934,2.412-6.085,2.513c-1.771,0.088-2.505-0.063-4.769-0.998C63.76,95.718,49.579,84.805,38.32,69.811    c-5.882-7.831-10.361-15.953-13.422-24.378c-1.784-4.913-1.872-7.048-0.405-9.562c0.633-1.061,3.327-3.688,5.288-5.153    c3.264-2.425,4.769-3.322,5.971-3.575C36.574,26.966,38.004,27.105,38.914,27.434z M67.833,26.07    c4.352,0.543,7.868,1.591,11.727,3.474c3.795,1.857,6.224,3.613,9.437,6.808c3.011,3.019,4.681,5.305,6.452,8.854    c2.467,4.951,3.871,10.838,4.111,17.317c0.089,2.21,0.025,2.703-0.481,3.335c-0.961,1.225-3.074,1.023-3.795-0.354    c-0.228-0.455-0.291-0.846-0.367-2.615c-0.127-2.716-0.316-4.471-0.696-6.568c-1.493-8.223-5.44-14.791-11.74-19.503    c-5.25-3.941-10.677-5.861-17.786-6.278c-2.404-0.139-2.821-0.227-3.365-0.644c-1.012-0.796-1.063-2.665-0.089-3.537    c0.595-0.543,1.012-0.619,3.074-0.556C65.392,25.842,66.973,25.969,67.833,26.07z M64,0c35.346,0,64,28.654,64,64    s-28.654,64-64,64S0,99.346,0,64S28.654,0,64,0z" fill="#7F4DA0" fill-rule="evenodd" id="Viber"/>
+</g>
+</g>
+</svg>
+                                    </a>
+                                </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup-order">
+        <div class="popup-wrapper">
+            <div class="popup-inner">
+                <div class="popup-content">
+                    <button class="btn-close popup-btn-close popup-close"></button>
+                    <h2 class="page-title popup-title">Заполните форму</h2>
+                    <p class="popup-subtitle popup-subtitle--order">Доставка по всей Украине</p>
+                    <div class="order">
+                        <img class="order-img" src="img/Sectiontop/P11.jpg" alt="">
+                        <h3 class="order-title">
+                            <span class="order-product-title">Samsung S20</span>
+                            <span class="order-product-price">15000</span> &#8372;
+                        </h3>
+                        <form class="form">
+                            <input class="order-info-title" type="hidden" name="Смартфон">
+                            <input class="order-info-price" type="hidden" name="Цена">
+                            <input class="form-input" type="text" name="Имя" placeholder="Имя" required>
+                            <input class="form-input" type="text" name="Телефон" placeholder="Телефон" required>
+                            <input class="form-input" type="text" name="Адрес" placeholder="Адрес" required>
+                            <select class="form-input" name="Оплата">
+                                <option value="Оплата наличными">Оплата наличными</option>
+                                <option value="Оплата картой">Оплата картой</option>
+                            </select>
+                            <button class="btn form-button" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup-thanks">
+        <div class="popup-wrapper">
+            <div class="popup-inner">
+                <div class="popup-content">
+                    <button class="btn-close popup-btn-close popup-close"></button>
+                    <h2 class="page-title popup-title">Товар отправлен</h2>
+                    <p class="popup-subtitle">Заявка успешно обработана</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup-error">
+        <div class="popup-wrapper">
+            <div class="popup-inner">
+                <div class="popup-content">
+                    <button class="btn-close popup-btn-close popup-close"></button>
+                    <h2 class="page-title popup-title">Произошла ошибка</h2>
+                    <p class="popup-subtitle">Пожалуйста, закажите товар по номеру <a class="popup-link" href="+380666572974">+38 (066) 657-29-74</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/MyLib.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/Scrollto.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/map.js"></script>
+    <script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRpK32HGVmIp9qVebtFbO2OOB6m3pA9CQ&callback=initMap&libraries=&v=weekly">
+</script>
+</body>
+</html>
